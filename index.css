@@ -772,7 +772,7 @@ img.graph {
     text-decoration: underline;
 }
 
-@media(max-width: 320px){
+@media(max-width: 480px){
     header, nav{
         display: flex;
         flex-direction: column;
