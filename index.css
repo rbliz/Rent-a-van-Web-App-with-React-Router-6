@@ -317,8 +317,8 @@ i[class*="van-type-"] {
     text-decoration: none;
 }
 
-.van-detail-container .back-button:visited {
-}
+/* .van-detail-container .back-button:visited {
+} */
 
 .van-detail-container .back-button span {
     text-decoration: underline;
@@ -798,4 +798,25 @@ img.graph {
         padding-left: 20px;
     }
     
+}
+
+/* carousel */
+
+.slideshow {
+    width: 320px;
+    margin: 50px auto 0 auto;
+    transition: 1.75s;
+}
+
+@media(min-width: 480px) {
+    .slideshow {
+        width: 480px ;
+        transition: 1.5s;
+    }
+}
+@media(min-width: 780px) {
+    .slideshow {
+        width: 540px ;
+        transition: 1.5s;
+    }
 }

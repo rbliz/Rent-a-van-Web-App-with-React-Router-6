@@ -25,6 +25,8 @@ export default function Vans() {
 
         loadVans()
     }, [])
+    
+    console.log(vans)
 
     const displayedVans = typeFilter
         ? vans.filter(van => van.type === typeFilter)
