@@ -790,27 +790,9 @@ img.graph {
         align-items: center;
         margin: 0 auto;
     }
-    .home-container > h1 {
-        font-size: 1.11rem;
-        transition: 1.5s;
-
-    }
-    .home-container > p {
-        font-size: .70rem;
-        transition: 1.5s;
-
-    }
-    .home-container > a {
-        width: 220px;
-        transition: 1.5s;
-        
-
-    }
-    .home-container >h1,
-    .home-container >p,
-    .home-container >a {
-        margin: 20px 0 0 auto;
-    }
+   .home-container {
+        min-height: 350px;
+   }
     .van-type{
         margin-bottom: 15px;
     }
