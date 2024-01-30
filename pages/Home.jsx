@@ -49,16 +49,18 @@ export default function Home() {
             <p>Join the fun! Rent the perfect van for your unbridled road trip!</p>
             <Link to="vans">Ready...Set...Van!</Link>
         </div>
-        <div className="slideshow">
-            <Zoom scale={1.4} indicators={true}>
-                {vans.map((each, index) => {
-                return(
-                    <div key={index} style={{ width: "100%" }}>
-                        <img style={{ objectFit: "cover", width: "100%", height: "100%", borderRadius: "5px" }} alt="Slide Image" src={each.imageUrl} />
-                    </div>
-                )
-                } )}
-            </Zoom>
+        <div className="slideshow-container">
+            <div className="slideshow">
+                <Zoom scale={1.4} indicators={true}>
+                    {vans.map((each, index) => {
+                    return(
+                        <div key={index} style={{ width: "100%" }}>
+                            <img style={{ objectFit: "cover", width: "100%", height: "100%", borderRadius: "5px" }} alt="Slide Image" src={each.imageUrl} />
+                        </div>
+                    )
+                    } )}
+                </Zoom>
+            </div>
         </div>
     </>
     )
