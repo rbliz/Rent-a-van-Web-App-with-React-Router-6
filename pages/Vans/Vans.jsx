@@ -1,32 +1,38 @@
 import React from "react"
 import { Link, useSearchParams } from "react-router-dom"
-import { getVans } from "../../api"
+// import { getVans } from "../../api"
+import useArray from "../../hooks/useArray"
+
+// ************
+//TODO: try to figure how to implement the try/catch/finally
+// **************
+
 
 export default function Vans() {
     const [searchParams, setSearchParams] = useSearchParams()
-    const [vans, setVans] = React.useState([])
-    const [loading, setLoading] = React.useState(false)
-    const [error, setError] = React.useState(null)
+    // const [vans, setVans] = React.useState([])
+    const [vans] = useArray([])
+    // const [loading, setLoading] = React.useState(false)
+    // const [error, setError] = React.useState(null)
 
     const typeFilter = searchParams.get("type")
 
-    React.useEffect(() => {
-        async function loadVans() {
-            setLoading(true)
-            try {
-                const data = await getVans()
-                setVans(data)
-            } catch (err) {
-                setError(err)
-            } finally {
-                setLoading(false)
-            }
-        }
+    // React.useEffect(() => {
+    //     async function loadVans() {
+    //         setLoading(true)
+    //         try {
+    //             const data = await getVans()
+    //             setVans(data)
+    //         } catch (err) {
+    //             setError(err)
+    //         } finally {
+    //             setLoading(false)
+    //         }
+    //     }
 
-        loadVans()
-    }, [])
+    //     loadVans()
+    // }, [])
     
-    console.log(vans)
 
     const displayedVans = typeFilter
         ? vans.filter(van => van.type === typeFilter)
@@ -62,13 +68,13 @@ export default function Vans() {
         })
     }
 
-    if (loading) {
-        return <h1>Loading...</h1>
-    }
+    // if (loading) {
+    //     return <h1>Loading...</h1>
+    // }
     
-    if (error) {
-        return <h1>There was an error: {error.message}</h1>
-    }
+    // if (error) {
+    //     return <h1>There was an error: {error.message}</h1>
+    // }
 
     return (
         <div className="van-list-container">
