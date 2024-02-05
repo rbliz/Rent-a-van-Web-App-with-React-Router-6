@@ -47,7 +47,7 @@ export default function Home() {
         <div className="home-container">
             <h1>The Van you're looking for.</h1>
             <p>Join the fun! Rent the perfect van for your unbridled road trip!</p>
-            <Link to="vans">Ready...Set...Van!</Link>
+            <Link to="vans">Rent</Link>
         </div>
         <div className="slideshow-container">
             <div className="slideshow">
