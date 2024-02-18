@@ -11,12 +11,12 @@ import {
 } from "firebase/firestore/lite"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBG1Z61s65KuBhbC-m3qYsmz4pWmAW-2-g",
-  authDomain: "react-router-6-bcbe7.firebaseapp.com",
-  projectId: "react-router-6-bcbe7",
-  storageBucket: "react-router-6-bcbe7.appspot.com",
-  messagingSenderId: "1013026157452",
-  appId: "1:1013026157452:web:7a13cd67b985c81e0fdca9"
+    apiKey: "AIzaSyCpdnajqD9psnDm4vWgBH-DcTPLbMoc0zM",
+    authDomain: "react-router-project-vans.firebaseapp.com",
+    projectId: "react-router-project-vans",
+    storageBucket: "react-router-project-vans.appspot.com",
+    messagingSenderId: "1058893348409",
+    appId: "1:1058893348409:web:45b7132c5750fbb42f17e8"
 };
 
 const app = initializeApp(firebaseConfig)
